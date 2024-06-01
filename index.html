@@ -1,90 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penjualan Tas Rajutan Tangan</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Angel Bags Collection</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Tas Rajutan</h1>
+        <div class="header-top">
+            <h1>Angel Bags Collection</h1>
             <nav>
-                <ul>
-                    <li><a href="#home">Beranda</a></li>
-                    <li><a href="#products">Produk</a></li>
-                    <li><a href="#about">Tentang Kami</a></li>
-                    <li><a href="#contact">Kontak</a></li>
-                </ul>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="produk.html">Products</a>
+                <a href="kontak.html">Contact</a>
             </nav>
         </div>
+        <div class="header-banner">
+            <h2>Handcrafted Bags with Love</h2>
+            <p>Discover our unique and elegant collection by Angelina P Tekege</p>
+        </div>
     </header>
-    <section id="home" class="hero-section">
-        <div class="container">
-            <h2>Selamat datang di Angel Bags Collection</h2>
-            <p>Kami menyediakan berbagai tas rajutan tangan menarik</p>
-        </div>
-    </section>
-    <section id="products" class="products-section">
-        <div class="container">
-            <h2>Produk Kami</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="images/05.jpg" alt="Tas Rajutan 1">
-                    <h3>Tas Rajutan 1</h3>
-                    <p>Harga: Rp......</p>
-                    <button>Beli Sekarang</button>
+    
+    <main>
+        <section class="categories">
+            <h2>Categories</h2>
+            <div class="category-list">
+                <div class="category">
+                    <img src="category1.jpg" alt="Category 1"> <!-- Ganti dengan gambar kategori -->
+                    <h3>Casual Bags</h3>
                 </div>
-                <div class="product">
-                    <img src="images/06.jpg" alt="Tas Rajutan 2">
-                    <h3>Tas Rajutan 2</h3>
-                    <p>Harga: Rp.......</p>
-                    <button>Beli Sekarang</button>
+                <div class="category">
+                    <img src="category2.jpg" alt="Category 2"> <!-- Ganti dengan gambar kategori -->
+                    <h3>Formal Bags</h3>
                 </div>
-                <div class="product">
-                    <img src="images/08.jpg" alt="Tas Rajutan 2">
-                    <h3>Tas Rajutan 2</h3>
-                    <p>Harga: Rp.......</p>
-                    <button>Beli Sekarang</button>
+                <div class="category">
+                    <img src="category3.jpg" alt="Category 3"> <!-- Ganti dengan gambar kategori -->
+                    <h3>Party Bags</h3>
                 </div>
-                <div class="product">
-                    <img src="images/03.jpg" alt="Tas Rajutan 2">
-                    <h3>Tas Rajutan 2</h3>
-                    <p>Harga: Rp.......</p>
-                    <button>Beli Sekarang</button>
-                </div>
-                <!-- Tambahkan lebih banyak produk sesuai kebutuhan -->
+                <!-- Tambahkan kategori lainnya sesuai kebutuhan -->
             </div>
-        </div>
-    </section>
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>Tentang Kami</h2>
-            <p>Kami adalah pengrajin tas rajutan tangan yang berdedikasi untuk membuat produk berkualitas tinggi.</p>
-        </div>
-    </section>
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Kontak Kami</h2>
-            <form id="contact-form">
-                <label for="name">Nama:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Pesan:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Kirim</button>
-            </form>
-        </div>
-    </section>
+        </section>
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="product1.jpg" alt="Product 1"> <!-- Ganti dengan gambar produk -->
+                    <h3>Elegant Leather Bag</h3>
+                    <p>Harga: $50</p>
+                    <a href="https://wa.me/085757365209"><button>Chat</button></a>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="Product 2"> <!-- Ganti dengan gambar produk -->
+                    <h3>Stylish Handbag</h3>
+                    <p>Harga: $60</p>
+                    <a href="https://wa.me/085757365209"><button>Chat</button></a>
+                </div>
+                <!-- Tambahkan produk lainnya sesuai kebutuhan -->
+            </div>
+        </section>
+    </main>
+    
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Angel Bags Collection</p>
-            <p class="p"><a href="https://smes3.github.io/webStatis/profile/profile.html">developer</a></p>
-        </div>
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Email: angelbags@example.com</p>
+            <p>Phone: +62 123 456 789</p>
+            <p>Address: Jl. Contoh No. 123, Jakarta, Indonesia</p>
+        </section>
+        <p>&copy; 2024 Angel Bags Collection. All rights reserved.</p>
     </footer>
-    <script src="js/scripts.js"></script>
 </body>
 </html>
