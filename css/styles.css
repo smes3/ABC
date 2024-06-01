@@ -1,95 +1,203 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+    color: #333;
 }
+
 header {
-    background-color: #333;
+    background-color: #003366;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
 }
+
 .header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
 }
+
 .header-top h1 {
     margin: 0;
 }
+
 nav a {
     color: white;
-    padding: 15px 20px;
+    padding: 10px 15px;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
+
 nav a:hover {
-    background-color: #555;
+    background-color: #002244;
 }
+
 .header-banner {
     text-align: center;
-    padding: 20px 0;
-    background-color: #444;
+    padding: 60px 20px;
+    background-color: #006699;
+    color: white;
 }
+
 .header-banner h2 {
     margin: 0;
-    font-size: 2em;
+    font-size: 2.5em;
 }
+
 .header-banner p {
-    margin: 5px 0 0;
+    font-size: 1.2em;
+    margin-top: 10px;
 }
+
 main {
     padding: 20px;
 }
-.categories, .featured-products {
+
+.about-us, .products, .contact-us {
     margin-bottom: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-.categories h2, .featured-products h2 {
+
+.about-us h2, .products h2, .contact-us h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #006699;
 }
-.category-list, .product-list {
+
+.about-us img, .product img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.product-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.category, .product {
-    background-color: white;
+
+.product {
+    background-color: #fff;
     border: 1px solid #ddd;
     margin: 10px;
     padding: 20px;
     width: 250px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
-.category img, .product img {
-    max-width: 100%;
-    height: auto;
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
-.category h3, .product h3 {
+
+.product h3 {
     margin: 10px 0;
+    color: #006699;
 }
+
 .product p {
     margin: 5px 0;
+    color: #555;
+    font-size: 1.2em;
+    font-weight: bold;
 }
+
 .product button {
-    background-color: #333;
+    background-color: #32cd32;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
+
 .product button:hover {
-    background-color: #555;
+    background-color: #2eb82e;
 }
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-us label {
+    margin-top: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.contact-us input, .contact-us textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-us button {
+    background-color: #006699;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-us button:hover {
+    background-color: #004466;
+}
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 14px;
 }
+
 .contact-info {
-    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .header-top nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .header-top nav a {
+        padding: 10px;
+    }
+    
+    .product {
+        width: 100%;
+    }
+    
+    .contact-us form {
+        width: 100%;
+        padding: 0 20px;
+    }
 }
