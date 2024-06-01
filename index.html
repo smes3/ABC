@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,65 +11,73 @@
         <div class="header-top">
             <h1>Angel Bags Collection</h1>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="produk.html">Products</a>
-                <a href="kontak.html">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
             </nav>
-        </div>
-        <div class="header-banner">
-            <h2>Handcrafted Bags with Love</h2>
-            <p>Discover our unique and elegant collection by Angelina P Tekege</p>
         </div>
     </header>
     
+    <section id="home" class="header-banner">
+        <h2>Welcome to Angel Bags Collection</h2>
+        <p>Discover the perfect bag for every occasion</p>
+    </section>
+
     <main>
-        <section class="categories">
-            <h2>Categories</h2>
-            <div class="category-list">
-                <div class="category">
-                    <img src="category1.jpg" alt="Category 1"> <!-- Ganti dengan gambar kategori -->
-                    <h3>Casual Bags</h3>
+        <section id="about" class="about-us">
+            <h2>About Us</h2>
+            <p>Angel Bags Collection is a brand created by Angelina P Tekege, offering a variety of handmade bags that combine style and functionality. Our mission is to provide high-quality bags that make every woman feel special and unique.</p>
+            <img src="about-image.jpg" alt="About Angel Bags">
+        </section>
+
+        <section id="products" class="products">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="product1.jpg" alt="Product 1">
+                    <h3>Stylish Tote</h3>
+                    <p>$45.00</p>
+                    <button>Add to Cart</button>
                 </div>
-                <div class="category">
-                    <img src="category2.jpg" alt="Category 2"> <!-- Ganti dengan gambar kategori -->
-                    <h3>Formal Bags</h3>
+                <div class="product">
+                    <img src="product2.jpg" alt="Product 2">
+                    <h3>Elegant Clutch</h3>
+                    <p>$35.00</p>
+                    <button>Add to Cart</button>
                 </div>
-                <div class="category">
-                    <img src="category3.jpg" alt="Category 3"> <!-- Ganti dengan gambar kategori -->
-                    <h3>Party Bags</h3>
+                <div class="product">
+                    <img src="product3.jpg" alt="Product 3">
+                    <h3>Classic Backpack</h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
                 </div>
-                <!-- Tambahkan kategori lainnya sesuai kebutuhan -->
             </div>
         </section>
 
-        <section class="featured-products">
-            <h2>Featured Products</h2>
-            <div class="product-list">
-                <div class="product">
-                    <img src="product1.jpg" alt="Product 1"> <!-- Ganti dengan gambar produk -->
-                    <h3>Elegant Leather Bag</h3>
-                    <p>Harga: $50</p>
-                    <a href="https://wa.me/085757365209"><button>Chat</button></a>
-                </div>
-                <div class="product">
-                    <img src="product2.jpg" alt="Product 2"> <!-- Ganti dengan gambar produk -->
-                    <h3>Stylish Handbag</h3>
-                    <p>Harga: $60</p>
-                    <a href="https://wa.me/085757365209"><button>Chat</button></a>
-                </div>
-                <!-- Tambahkan produk lainnya sesuai kebutuhan -->
+        <section id="contact" class="contact-us">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: info@angelbagscollection.com</p>
+                <p>Phone: +62 123 4567 890</p>
+                <p>Address: Jl. Contoh No. 123, Jakarta, Indonesia</p>
             </div>
         </section>
     </main>
-    
+
     <footer>
-        <section class="contact-info">
-            <h2>Contact Us</h2>
-            <p>Email: angelbags@example.com</p>
-            <p>Phone: +62 123 456 789</p>
-            <p>Address: Jl. Contoh No. 123, Jakarta, Indonesia</p>
-        </section>
         <p>&copy; 2024 Angel Bags Collection. All rights reserved.</p>
     </footer>
 </body>
